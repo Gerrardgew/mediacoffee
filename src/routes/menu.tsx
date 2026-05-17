@@ -4,7 +4,7 @@ export const Route = createFileRoute("/menu")({
   head: () => ({
     meta: [
       { title: "Menu — Me.dia Coffee & Roastery" },
-      { name: "description", content: "Explore Me.dia's full menu — signature lattes, espresso, iced drinks, pastries and more. Rp 25–50K per person." },
+      { name: "description", content: "Cek menu lengkap Me.dia — signature latte, espresso, iced drinks, pastry, dan lainnya. Rp 25–50K per orang." },
     ],
   }),
   component: MenuPage,
@@ -12,30 +12,30 @@ export const Route = createFileRoute("/menu")({
 
 const sections = [
   {
-    title: "Espresso & Hot",
+    title: "Espresso & Panas",
     items: [
-      { name: "Hot Cafe Latte", desc: "Smooth double shot, steamed milk", price: "28K" },
-      { name: "Hot Cappuccino", desc: "Espresso topped with velvety foam", price: "28K" },
-      { name: "Hazelnut Latte", desc: "Warm hazelnut, gentle sweetness", price: "32K" },
-      { name: "Caramel Latte", desc: "House signature — buttery caramel", price: "32K" },
-      { name: "Affogato", desc: "Hot espresso over vanilla ice cream", price: "35K" },
+      { name: "Hot Cafe Latte", desc: "Double shot smooth, susu steam", price: "28K" },
+      { name: "Hot Cappuccino", desc: "Espresso dengan foam lembut", price: "28K" },
+      { name: "Hazelnut Latte", desc: "Hazelnut hangat, manisnya pas", price: "32K" },
+      { name: "Caramel Latte", desc: "Signature — caramel buttery", price: "32K" },
+      { name: "Affogato", desc: "Espresso panas di atas es krim vanilla", price: "35K" },
     ],
   },
   {
-    title: "Iced & Cold",
+    title: "Iced & Dingin",
     items: [
-      { name: "Iced Cappuccino", desc: "Cold foam, bold espresso", price: "30K" },
-      { name: "Iced Caramel Latte", desc: "Caramel, milk, espresso, ice", price: "33K" },
-      { name: "Coffee Lemonade", desc: "Refreshing espresso with lemon", price: "30K" },
-      { name: "Iced Hazelnut Latte", desc: "Nutty, sweet, smooth", price: "33K" },
+      { name: "Iced Cappuccino", desc: "Cold foam, espresso nendang", price: "30K" },
+      { name: "Iced Caramel Latte", desc: "Caramel, susu, espresso, es", price: "33K" },
+      { name: "Coffee Lemonade", desc: "Espresso seger campur lemon", price: "30K" },
+      { name: "Iced Hazelnut Latte", desc: "Nutty, manis, smooth", price: "33K" },
     ],
   },
   {
-    title: "Bites",
+    title: "Cemilan",
     items: [
-      { name: "Donat Keju", desc: "Soft donut, melted cheese", price: "18K" },
-      { name: "Croissant", desc: "Buttery, flaky, warm", price: "22K" },
-      { name: "Banana Bread", desc: "Slow-baked, lightly toasted", price: "20K" },
+      { name: "Donat Keju", desc: "Donat lembut, keju leleh", price: "18K" },
+      { name: "Croissant", desc: "Buttery, flaky, hangat", price: "22K" },
+      { name: "Banana Bread", desc: "Slow-baked, sedikit toasted", price: "20K" },
     ],
   },
 ];
@@ -45,8 +45,8 @@ function MenuPage() {
     <div className="mx-auto max-w-5xl px-6 py-16 md:py-24">
       <div className="text-center max-w-xl mx-auto mb-16">
         <div className="text-xs uppercase tracking-widest text-primary mb-3">Menu</div>
-        <h1 className="font-display text-5xl md:text-6xl">Small list. Big flavor.</h1>
-        <p className="mt-4 text-muted-foreground">Rp 25–50K per person · all prices in IDR</p>
+        <h1 className="font-display text-5xl md:text-6xl">Listnya pendek. Rasanya juara.</h1>
+        <p className="mt-4 text-muted-foreground">Rp 25–50K per orang · semua harga dalam IDR</p>
       </div>
 
       <div className="space-y-16">

@@ -4,8 +4,8 @@ import { MapPin, Phone, Clock, Car, ShoppingBag, Utensils } from "lucide-react";
 export const Route = createFileRoute("/visit")({
   head: () => ({
     meta: [
-      { title: "Visit Me.dia — Bencongan Indah, Tangerang" },
-      { name: "description", content: "Find Me.dia Coffee & Roastery at Jl. Palem Raja Raya, Bencongan Indah, Tangerang. Open daily until midnight. Dine-in, kerbside, delivery." },
+      { title: "Mampir ke Me.dia — Bencongan Indah, Tangerang" },
+      { name: "description", content: "Temui Me.dia Coffee & Roastery di Jl. Palem Raja Raya, Bencongan Indah, Tangerang. Buka tiap hari sampai tengah malam. Dine-in, kerbside, delivery." },
     ],
   }),
   component: VisitPage,
@@ -15,21 +15,21 @@ function VisitPage() {
   return (
     <div className="mx-auto max-w-7xl px-6 py-16 md:py-24">
       <div className="max-w-2xl mb-14">
-        <div className="text-xs uppercase tracking-widest text-primary mb-3">Visit</div>
-        <h1 className="font-display text-5xl md:text-6xl">Come say hi.</h1>
-        <p className="mt-4 text-muted-foreground text-lg">Walk in, take out, or have it delivered. Either way, the coffee's ready.</p>
+        <div className="text-xs uppercase tracking-widest text-primary mb-3">Mampir</div>
+        <h1 className="font-display text-5xl md:text-6xl">Yuk, mampir!</h1>
+        <p className="mt-4 text-muted-foreground text-lg">Walk-in, take away, atau delivery — kopinya udah siap nungguin kamu.</p>
       </div>
 
       <div className="grid lg:grid-cols-5 gap-8">
         <div className="lg:col-span-2 space-y-6">
-          <InfoCard icon={<MapPin />} title="Address">
+          <InfoCard icon={<MapPin />} title="Alamat">
             Jl. Palem Raja Raya, Bencongan Indah,<br />
             Kec. Kelapa Dua, Kab. Tangerang, Banten 15810
           </InfoCard>
-          <InfoCard icon={<Clock />} title="Hours">
-            Open daily · closes 12:00 AM
+          <InfoCard icon={<Clock />} title="Jam Buka">
+            Buka tiap hari · tutup jam 12:00 malam
           </InfoCard>
-          <InfoCard icon={<Phone />} title="Call us">
+          <InfoCard icon={<Phone />} title="Hubungi Kami">
             <a href="tel:082323239036" className="hover:text-primary transition-colors">0823-2323-9036</a>
           </InfoCard>
 
@@ -42,7 +42,7 @@ function VisitPage() {
 
         <div className="lg:col-span-3 rounded-3xl overflow-hidden border border-border bg-muted aspect-[4/3] lg:aspect-auto min-h-[400px]">
           <iframe
-            title="Me.dia location map"
+            title="Lokasi Me.dia"
             src="https://www.google.com/maps?q=Jl.+Palem+Raja+Raya+Bencongan+Indah+Tangerang&output=embed"
             className="w-full h-full"
             loading="lazy"

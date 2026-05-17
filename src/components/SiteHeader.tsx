@@ -3,10 +3,10 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const nav = [
-  { to: "/", label: "Home" },
+  { to: "/", label: "Beranda" },
   { to: "/menu", label: "Menu" },
-  { to: "/about", label: "About" },
-  { to: "/visit", label: "Visit" },
+  { to: "/about", label: "Tentang" },
+  { to: "/visit", label: "Mampir" },
 ];
 
 export function SiteHeader() {
@@ -34,7 +34,7 @@ export function SiteHeader() {
           to="/visit"
           className="hidden md:inline-flex items-center rounded-full bg-primary text-primary-foreground px-5 py-2 text-sm font-medium hover:bg-primary/90 transition-colors"
         >
-          Order Now
+          Pesan Sekarang
         </Link>
         <button
           className="md:hidden p-2 -mr-2"
@@ -62,7 +62,7 @@ export function SiteHeader() {
               onClick={() => setOpen(false)}
               className="mt-2 inline-flex justify-center rounded-full bg-primary text-primary-foreground px-5 py-2.5 text-sm font-medium"
             >
-              Order Now
+              Pesan Sekarang
             </Link>
           </div>
         </nav>

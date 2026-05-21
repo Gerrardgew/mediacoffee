@@ -4,8 +4,8 @@ import { MapPin, Phone, Clock, Car, ShoppingBag, Utensils } from "lucide-react";
 export const Route = createFileRoute("/visit")({
   head: () => ({
     meta: [
-      { title: "Mampir ke Me.dia — Bencongan Indah, Tangerang" },
-      { name: "description", content: "Temui Me.dia Coffee & Roastery di Jl. Palem Raja Raya, Bencongan Indah, Tangerang. Buka tiap hari sampai tengah malam. Dine-in, kerbside, delivery." },
+      { title: "Mampir ke Me.dia — Sukasari, Tangerang" },
+      { name: "description", content: "Me.dia Coffee and Space di Jl. Ir. Sutami No.18, Sukasari, Kota Tangerang. Buka tiap hari sampai tengah malam. Makan di tempat & bawa pulang." },
     ],
   }),
   component: VisitPage,

@@ -33,7 +33,7 @@ function Home() {
               kopi <span className="text-primary italic">nendang</span>.
             </h1>
             <p className="mt-6 text-lg text-muted-foreground max-w-md leading-relaxed">
-              Me.dia adalah coffee & roastery di Tangerang — tempat ngopi, kerja, dan nongkrong bareng temen sampai tengah malam.
+              Me.dia adalah coffee and space di Tangerang — indoor adem buat fokus, outdoor rimbun buat santai sampai tengah malam.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link to="/menu" className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-6 py-3 text-sm font-medium hover:bg-primary/90 transition-all hover:gap-3">

@@ -142,13 +142,13 @@ function Home() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center max-w-2xl mx-auto">
             <div className="text-xs uppercase tracking-widest text-primary mb-3">Kata mereka</div>
-            <h2 className="font-display text-4xl md:text-5xl">4.6 dari 280 review.</h2>
+            <h2 className="font-display text-4xl md:text-5xl">4.6 dari 162 review.</h2>
           </div>
           <div className="mt-14 grid md:grid-cols-3 gap-6">
             {[
-              { q: "Tempatnya cozy banget buat chill & nongkrong — harga ramah di kantong, 10/10 suka!", a: "Local Guide" },
-              { q: "Menunya autentik, rasanya rich dan komposisinya pas. Mantap.", a: "Muhamad Farhan" },
-              { q: "Tempat cozy, kopinya juara, menunya banyak pilihan.", a: "muhbrohim" },
+              { q: "Kopinya enak! Abang sama sister-nya ramah, kami datang early tapi tetep gercep dilayani.", a: "Galuh Pancawati · Local Guide" },
+              { q: "Area outdoornya luas dan asri, cocok buat nongkrong. Indoornya adem dan estetik. Hot cappuccino-nya enak, cangkirnya gede!", a: "Melisa Mel · Local Guide" },
+              { q: "Desainnya enak buat santai, outdoor rimbun banyak pohon dan rapi. Indoor non-smoking cukup OK.", a: "Indra Gunawan · Local Guide" },
             ].map((r, i) => (
               <figure key={i} className="bg-card border border-border rounded-3xl p-8">
                 <div className="flex gap-1 text-primary mb-4">

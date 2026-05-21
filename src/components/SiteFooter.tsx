@@ -30,7 +30,7 @@ export function SiteFooter() {
       </div>
       <div className="border-t border-secondary-foreground/10">
         <div className="mx-auto max-w-7xl px-6 py-5 text-xs text-secondary-foreground/60 flex justify-between">
-          <span>© {new Date().getFullYear()} Me.dia Coffee & Roastery</span>
+          <span>© {new Date().getFullYear()} Me.dia Coffee and Space</span>
           <span>Buka tiap hari · sampai jam 12 malam</span>
         </div>
       </div>

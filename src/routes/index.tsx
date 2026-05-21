@@ -125,10 +125,10 @@ function Home() {
           <div className="text-xs uppercase tracking-widest text-primary mb-3">Tempatnya</div>
           <h2 className="font-display text-4xl md:text-5xl">Tempat cozy buat chill & nongkrong.</h2>
           <p className="mt-5 text-muted-foreground leading-relaxed">
-            Cahaya hangat, tanaman, dan suara espresso machine yang adem. Ada invisible door yang misahin area smoking & non-smoking — dua-duanya ber-AC, dua-duanya nyaman.
+            Indoor ber-AC khusus non-smoking — adem, estetik, enak buat fokus. Outdoor rimbun banyak pohon, ada kipas, area smoking-friendly. Banyak colokan, banyak meja, plus board games buat seru-seruan bareng.
           </p>
           <ul className="mt-8 grid grid-cols-2 gap-y-4 text-sm">
-            {["Dine-in", "Kerbside pickup", "Delivery", "Smoking room (AC)", "Mushola", "Area outdoor"].map((f) => (
+            {["Makan di tempat", "Bawa pulang", "Indoor AC (non-smoking)", "Outdoor (smoking area)", "Banyak colokan", "Board games"].map((f) => (
               <li key={f} className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-primary" />{f}
               </li>

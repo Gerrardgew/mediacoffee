@@ -5,8 +5,8 @@ import interiorImg from "@/assets/interior.jpg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "Tentang — Me.dia Coffee & Roastery" },
-      { name: "description", content: "Me.dia roasting biji kopi small-batch dan nyajiin di tempat yang hangat & ramah di Bencongan Indah, Tangerang." },
+      { title: "Tentang — Me.dia Coffee and Space" },
+      { name: "description", content: "Me.dia Coffee and Space di Sukasari, Tangerang — indoor adem & estetik, outdoor rimbun, kopi bold dan ramah di kantong." },
     ],
   }),
   component: AboutPage,
@@ -17,9 +17,9 @@ function AboutPage() {
     <>
       <section className="mx-auto max-w-4xl px-6 py-20 md:py-28 text-center">
         <div className="text-xs uppercase tracking-widest text-primary mb-3">Tentang Me.dia</div>
-        <h1 className="font-display text-5xl md:text-7xl leading-[1]">Roastery tetangga yang ramah sama siapa aja.</h1>
+        <h1 className="font-display text-5xl md:text-7xl leading-[1]">Coffee and space buat semua.</h1>
         <p className="mt-8 text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-          Kami bikin Me.dia biar ngopi enak terasa kayak di rumah — accessible, jujur, dan hangat. Roaster kami jalan small-batch. Pintunya buka sampai malam. Mejanya buat kamu, mau berapa lama pun nggak masalah.
+          Me.dia bukan cuma kedai kopi — kami juga space buat kamu nongkrong, kerja, atau seru-seruan bareng temen. Indoor adem & estetik buat yang mau fokus, outdoor rimbun banyak pohon buat yang mau santai. Buka pagi sampai tengah malam, harganya ramah di kantong.
         </p>
       </section>
 
@@ -30,9 +30,9 @@ function AboutPage() {
 
       <section className="mx-auto max-w-7xl px-6 py-24 grid md:grid-cols-3 gap-12">
         {[
-          { n: "01", t: "Source", d: "Biji kopi kami pilih dari petani yang kami percaya — single-origin & blend musiman." },
-          { n: "02", t: "Roast", d: "Roasting in-house small-batch, di-tune buat minuman yang kami sajikan." },
-          { n: "03", t: "Serve", d: "Ditarik, dituang, diserahin lewat bar sambil senyum tulus." },
+          { n: "01", t: "Coffee", d: "Signature kayak Kopi Mandra & Coconut Delight. Hot cappuccino-nya bold, cangkirnya gede." },
+          { n: "02", t: "Space", d: "Indoor AC khusus non-smoking. Outdoor rimbun + kipas buat smoking area. Banyak colokan, banyak kursi." },
+          { n: "03", t: "Vibes", d: "Board games, gitar, dan barista yang gercep ramah. Cocok buat solo work atau nongkrong rame-rame." },
         ].map((s) => (
           <div key={s.n}>
             <div className="font-display text-primary text-5xl mb-4">{s.n}</div>

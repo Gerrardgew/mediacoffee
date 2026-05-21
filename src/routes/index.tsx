@@ -8,8 +8,8 @@ import latteImg from "@/assets/latte.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Me.dia Coffee & Roastery — Ngopi santai di Tangerang" },
-      { name: "description", content: "Tempat nongkrong cozy buat kamu yang suka kopi. Hand-crafted drinks, vibes hangat, buka sampai tengah malam di Bencongan Indah, Tangerang." },
+      { title: "Me.dia Coffee and Space — Ngopi santai di Tangerang" },
+      { name: "description", content: "Coffee and Space di Sukasari, Tangerang. Indoor adem & estetik, outdoor rimbun banyak pohon. Buka tiap hari sampai tengah malam." },
     ],
   }),
   component: Home,
@@ -26,14 +26,14 @@ function Home() {
               <span className="flex items-center gap-1 text-primary">
                 <Star size={12} fill="currentColor" /> 4.6
               </span>
-              <span className="text-muted-foreground">· 280 review di Google</span>
+              <span className="text-muted-foreground">· 162 review di Google</span>
             </div>
             <h1 className="mt-6 font-display text-5xl md:text-7xl leading-[0.95] text-foreground">
               Pagi santai,<br />
               kopi <span className="text-primary italic">nendang</span>.
             </h1>
             <p className="mt-6 text-lg text-muted-foreground max-w-md leading-relaxed">
-              Me.dia adalah coffee & roastery di Tangerang — tempat ngopi, kerja, dan nongkrong bareng temen sampai tengah malam.
+              Me.dia adalah coffee and space di Tangerang — indoor adem buat fokus, outdoor rimbun buat santai sampai tengah malam.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link to="/menu" className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-6 py-3 text-sm font-medium hover:bg-primary/90 transition-all hover:gap-3">
@@ -45,7 +45,7 @@ function Home() {
             </div>
             <div className="mt-10 flex flex-wrap gap-6 text-sm text-muted-foreground">
               <span className="flex items-center gap-2"><Clock size={16} className="text-primary" /> Buka · tutup jam 12 malam</span>
-              <span className="flex items-center gap-2"><MapPin size={16} className="text-primary" /> Bencongan Indah</span>
+              <span className="flex items-center gap-2"><MapPin size={16} className="text-primary" /> Sukasari, Tangerang</span>
             </div>
           </div>
           <div className="relative">
@@ -60,8 +60,8 @@ function Home() {
             />
             <div className="absolute -bottom-6 -left-6 hidden md:block bg-card border border-border rounded-2xl p-4 shadow-xl max-w-[220px]">
               <div className="text-xs uppercase tracking-widest text-primary mb-1">Brew hari ini</div>
-              <div className="font-display text-lg">Caramel Latte</div>
-              <div className="text-xs text-muted-foreground mt-1">Manis, smooth, signature.</div>
+              <div className="font-display text-lg">Kopi Mandra</div>
+              <div className="text-xs text-muted-foreground mt-1">Signature, bold, khas Me.dia.</div>
             </div>
           </div>
         </div>
@@ -72,13 +72,13 @@ function Home() {
         <div className="flex gap-12 whitespace-nowrap animate-[scroll_30s_linear_infinite] font-display text-2xl">
           {Array.from({ length: 2 }).map((_, i) => (
             <div key={i} className="flex gap-12">
-              <span>· Caramel Latte</span>
-              <span className="text-primary">· Iced Cappuccino</span>
+              <span>· Kopi Mandra</span>
+              <span className="text-primary">· Coconut Delight</span>
+              <span>· Hot Cappuccino</span>
+              <span className="text-primary">· Hot Americano</span>
               <span>· Coffee Lemonade</span>
-              <span className="text-primary">· Hazelnut Latte</span>
-              <span>· Affogato</span>
-              <span className="text-primary">· Donat Keju</span>
-              <span>· Hot Cafe Latte</span>
+              <span className="text-primary">· Onion Ring</span>
+              <span>· Brain Brain Fish</span>
             </div>
           ))}
         </div>
@@ -98,9 +98,9 @@ function Home() {
         </div>
         <div className="grid md:grid-cols-3 gap-6">
           {[
-            { name: "Caramel Latte", price: "Rp 32K", img: latteImg, note: "Smooth, manis pas, signature kami." },
-            { name: "Iced Cappuccino", price: "Rp 30K", img: heroImg, note: "Espresso nendang di atas cold foam." },
-            { name: "Affogato", price: "Rp 35K", img: beansImg, note: "Shot panas ketemu es krim vanilla." },
+            { name: "Kopi Mandra", price: "Rp 28K", img: latteImg, note: "Signature kami — bold, khas Me.dia." },
+            { name: "Coconut Delight", price: "Rp 32K", img: heroImg, note: "Kopi creamy dengan sentuhan kelapa." },
+            { name: "Hot Cappuccino", price: "Rp 30K", img: beansImg, note: "Cangkir gede, rasa kopi bold." },
           ].map((d) => (
             <article key={d.name} className="group bg-card border border-border rounded-3xl overflow-hidden hover:shadow-xl transition-all">
               <div className="aspect-[4/5] overflow-hidden">
@@ -125,10 +125,10 @@ function Home() {
           <div className="text-xs uppercase tracking-widest text-primary mb-3">Tempatnya</div>
           <h2 className="font-display text-4xl md:text-5xl">Tempat cozy buat chill & nongkrong.</h2>
           <p className="mt-5 text-muted-foreground leading-relaxed">
-            Cahaya hangat, tanaman, dan suara espresso machine yang adem. Ada invisible door yang misahin area smoking & non-smoking — dua-duanya ber-AC, dua-duanya nyaman.
+            Indoor ber-AC khusus non-smoking — adem, estetik, enak buat fokus. Outdoor rimbun banyak pohon, ada kipas, area smoking-friendly. Banyak colokan, banyak meja, plus board games buat seru-seruan bareng.
           </p>
           <ul className="mt-8 grid grid-cols-2 gap-y-4 text-sm">
-            {["Dine-in", "Kerbside pickup", "Delivery", "Smoking room (AC)", "Mushola", "Area outdoor"].map((f) => (
+            {["Makan di tempat", "Bawa pulang", "Indoor AC (non-smoking)", "Outdoor (smoking area)", "Banyak colokan", "Board games"].map((f) => (
               <li key={f} className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-primary" />{f}
               </li>
@@ -142,13 +142,13 @@ function Home() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center max-w-2xl mx-auto">
             <div className="text-xs uppercase tracking-widest text-primary mb-3">Kata mereka</div>
-            <h2 className="font-display text-4xl md:text-5xl">4.6 dari 280 review.</h2>
+            <h2 className="font-display text-4xl md:text-5xl">4.6 dari 162 review.</h2>
           </div>
           <div className="mt-14 grid md:grid-cols-3 gap-6">
             {[
-              { q: "Tempatnya cozy banget buat chill & nongkrong — harga ramah di kantong, 10/10 suka!", a: "Local Guide" },
-              { q: "Menunya autentik, rasanya rich dan komposisinya pas. Mantap.", a: "Muhamad Farhan" },
-              { q: "Tempat cozy, kopinya juara, menunya banyak pilihan.", a: "muhbrohim" },
+              { q: "Kopinya enak! Abang sama sister-nya ramah, kami datang early tapi tetep gercep dilayani.", a: "Galuh Pancawati · Local Guide" },
+              { q: "Area outdoornya luas dan asri, cocok buat nongkrong. Indoornya adem dan estetik. Hot cappuccino-nya enak, cangkirnya gede!", a: "Melisa Mel · Local Guide" },
+              { q: "Desainnya enak buat santai, outdoor rimbun banyak pohon dan rapi. Indoor non-smoking cukup OK.", a: "Indra Gunawan · Local Guide" },
             ].map((r, i) => (
               <figure key={i} className="bg-card border border-border rounded-3xl p-8">
                 <div className="flex gap-1 text-primary mb-4">

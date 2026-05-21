@@ -72,13 +72,13 @@ function Home() {
         <div className="flex gap-12 whitespace-nowrap animate-[scroll_30s_linear_infinite] font-display text-2xl">
           {Array.from({ length: 2 }).map((_, i) => (
             <div key={i} className="flex gap-12">
-              <span>· Caramel Latte</span>
-              <span className="text-primary">· Iced Cappuccino</span>
+              <span>· Kopi Mandra</span>
+              <span className="text-primary">· Coconut Delight</span>
+              <span>· Hot Cappuccino</span>
+              <span className="text-primary">· Hot Americano</span>
               <span>· Coffee Lemonade</span>
-              <span className="text-primary">· Hazelnut Latte</span>
-              <span>· Affogato</span>
-              <span className="text-primary">· Donat Keju</span>
-              <span>· Hot Cafe Latte</span>
+              <span className="text-primary">· Onion Ring</span>
+              <span>· Brain Brain Fish</span>
             </div>
           ))}
         </div>

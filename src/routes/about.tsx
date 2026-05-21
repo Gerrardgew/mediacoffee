@@ -30,9 +30,9 @@ function AboutPage() {
 
       <section className="mx-auto max-w-7xl px-6 py-24 grid md:grid-cols-3 gap-12">
         {[
-          { n: "01", t: "Source", d: "Biji kopi kami pilih dari petani yang kami percaya — single-origin & blend musiman." },
-          { n: "02", t: "Roast", d: "Roasting in-house small-batch, di-tune buat minuman yang kami sajikan." },
-          { n: "03", t: "Serve", d: "Ditarik, dituang, diserahin lewat bar sambil senyum tulus." },
+          { n: "01", t: "Coffee", d: "Signature kayak Kopi Mandra & Coconut Delight. Hot cappuccino-nya bold, cangkirnya gede." },
+          { n: "02", t: "Space", d: "Indoor AC khusus non-smoking. Outdoor rimbun + kipas buat smoking area. Banyak colokan, banyak kursi." },
+          { n: "03", t: "Vibes", d: "Board games, gitar, dan barista yang gercep ramah. Cocok buat solo work atau nongkrong rame-rame." },
         ].map((s) => (
           <div key={s.n}>
             <div className="font-display text-primary text-5xl mb-4">{s.n}</div>

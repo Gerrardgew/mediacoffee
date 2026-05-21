@@ -8,7 +8,7 @@ export function SiteFooter() {
         <div className="md:col-span-2">
           <div className="font-display text-3xl">Me<span className="text-primary">.</span>dia</div>
           <p className="mt-3 text-secondary-foreground/70 max-w-sm leading-relaxed">
-            Coffee & Roastery — pojok hangat di Bencongan Indah, tempat ngopi yang selalu punya cerita.
+            Coffee and Space — pojok santai di Sukasari, Tangerang. Indoor adem, outdoor rimbun, kopinya bold.
           </p>
         </div>
         <div>

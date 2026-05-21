@@ -60,8 +60,8 @@ function Home() {
             />
             <div className="absolute -bottom-6 -left-6 hidden md:block bg-card border border-border rounded-2xl p-4 shadow-xl max-w-[220px]">
               <div className="text-xs uppercase tracking-widest text-primary mb-1">Brew hari ini</div>
-              <div className="font-display text-lg">Caramel Latte</div>
-              <div className="text-xs text-muted-foreground mt-1">Manis, smooth, signature.</div>
+              <div className="font-display text-lg">Kopi Mandra</div>
+              <div className="text-xs text-muted-foreground mt-1">Signature, bold, khas Me.dia.</div>
             </div>
           </div>
         </div>

@@ -45,7 +45,7 @@ function Home() {
             </div>
             <div className="mt-10 flex flex-wrap gap-6 text-sm text-muted-foreground">
               <span className="flex items-center gap-2"><Clock size={16} className="text-primary" /> Buka · tutup jam 12 malam</span>
-              <span className="flex items-center gap-2"><MapPin size={16} className="text-primary" /> Bencongan Indah</span>
+              <span className="flex items-center gap-2"><MapPin size={16} className="text-primary" /> Sukasari, Tangerang</span>
             </div>
           </div>
           <div className="relative">

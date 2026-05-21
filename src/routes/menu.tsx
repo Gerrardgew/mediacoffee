@@ -3,8 +3,8 @@ import { createFileRoute } from "@tanstack/react-router";
 export const Route = createFileRoute("/menu")({
   head: () => ({
     meta: [
-      { title: "Menu — Me.dia Coffee & Roastery" },
-      { name: "description", content: "Cek menu lengkap Me.dia — signature latte, espresso, iced drinks, pastry, dan lainnya. Rp 25–50K per orang." },
+      { title: "Menu — Me.dia Coffee and Space" },
+      { name: "description", content: "Menu Me.dia Coffee and Space — Kopi Mandra, Coconut Delight, hot cappuccino, americano, plus snack. Rp 25–50K per orang." },
     ],
   }),
   component: MenuPage,

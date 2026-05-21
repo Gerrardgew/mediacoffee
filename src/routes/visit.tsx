@@ -1,11 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { MapPin, Phone, Clock, ShoppingBag, Utensils } from "lucide-react";
+import { MapPin, Phone, Clock, Car, ShoppingBag, Utensils } from "lucide-react";
 
 export const Route = createFileRoute("/visit")({
   head: () => ({
     meta: [
-      { title: "Mampir ke Me.dia — Sukasari, Tangerang" },
-      { name: "description", content: "Me.dia Coffee and Space di Jl. Ir. Sutami No.18, Sukasari, Kota Tangerang. Buka tiap hari sampai tengah malam. Makan di tempat & bawa pulang." },
+      { title: "Mampir ke Me.dia — Bencongan Indah, Tangerang" },
+      { name: "description", content: "Temui Me.dia Coffee & Roastery di Jl. Palem Raja Raya, Bencongan Indah, Tangerang. Buka tiap hari sampai tengah malam. Dine-in, kerbside, delivery." },
     ],
   }),
   component: VisitPage,
@@ -23,26 +23,27 @@ function VisitPage() {
       <div className="grid lg:grid-cols-5 gap-8">
         <div className="lg:col-span-2 space-y-6">
           <InfoCard icon={<MapPin />} title="Alamat">
-            Jl. Ir. Sutami No.18, RT.005/RW.011,<br />
-            Sukasari, Kec. Tangerang, Kota Tangerang, Banten 15118
+            Jl. Palem Raja Raya, Bencongan Indah,<br />
+            Kec. Kelapa Dua, Kab. Tangerang, Banten 15810
           </InfoCard>
           <InfoCard icon={<Clock />} title="Jam Buka">
-            Buka tiap hari · tutup pukul 00.00
+            Buka tiap hari · tutup jam 12:00 malam
           </InfoCard>
           <InfoCard icon={<Phone />} title="Hubungi Kami">
             <a href="tel:082323239036" className="hover:text-primary transition-colors">0823-2323-9036</a>
           </InfoCard>
 
-          <div className="grid grid-cols-2 gap-3 pt-2">
-            <Pill icon={<Utensils size={14} />}>Makan di tempat</Pill>
-            <Pill icon={<ShoppingBag size={14} />}>Bawa pulang</Pill>
+          <div className="grid grid-cols-3 gap-3 pt-2">
+            <Pill icon={<Utensils size={14} />}>Dine-in</Pill>
+            <Pill icon={<Car size={14} />}>Kerbside</Pill>
+            <Pill icon={<ShoppingBag size={14} />}>Delivery</Pill>
           </div>
         </div>
 
         <div className="lg:col-span-3 rounded-3xl overflow-hidden border border-border bg-muted aspect-[4/3] lg:aspect-auto min-h-[400px]">
           <iframe
-            title="Lokasi Me.dia Coffee and Space"
-            src="https://www.google.com/maps?q=Me.dia+Coffee+and+Space+Jl.+Ir.+Sutami+Sukasari+Tangerang&output=embed"
+            title="Lokasi Me.dia"
+            src="https://www.google.com/maps?q=Jl.+Palem+Raja+Raya+Bencongan+Indah+Tangerang&output=embed"
             className="w-full h-full"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"

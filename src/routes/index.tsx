@@ -26,7 +26,7 @@ function Home() {
               <span className="flex items-center gap-1 text-primary">
                 <Star size={12} fill="currentColor" /> 4.6
               </span>
-              <span className="text-muted-foreground">· 280 review di Google</span>
+              <span className="text-muted-foreground">· 162 review di Google</span>
             </div>
             <h1 className="mt-6 font-display text-5xl md:text-7xl leading-[0.95] text-foreground">
               Pagi santai,<br />

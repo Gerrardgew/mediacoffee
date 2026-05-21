@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { MapPin, Phone, Clock, Car, ShoppingBag, Utensils } from "lucide-react";
+import { MapPin, Phone, Clock, ShoppingBag, Utensils } from "lucide-react";
 
 export const Route = createFileRoute("/visit")({
   head: () => ({

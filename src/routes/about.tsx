@@ -5,8 +5,8 @@ import interiorImg from "@/assets/interior.jpg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "Tentang — Me.dia Coffee & Roastery" },
-      { name: "description", content: "Me.dia roasting biji kopi small-batch dan nyajiin di tempat yang hangat & ramah di Bencongan Indah, Tangerang." },
+      { title: "Tentang — Me.dia Coffee and Space" },
+      { name: "description", content: "Me.dia Coffee and Space di Sukasari, Tangerang — indoor adem & estetik, outdoor rimbun, kopi bold dan ramah di kantong." },
     ],
   }),
   component: AboutPage,

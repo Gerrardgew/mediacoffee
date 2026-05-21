@@ -8,8 +8,8 @@ import latteImg from "@/assets/latte.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Me.dia Coffee & Roastery — Ngopi santai di Tangerang" },
-      { name: "description", content: "Tempat nongkrong cozy buat kamu yang suka kopi. Hand-crafted drinks, vibes hangat, buka sampai tengah malam di Bencongan Indah, Tangerang." },
+      { title: "Me.dia Coffee and Space — Ngopi santai di Tangerang" },
+      { name: "description", content: "Coffee and Space di Sukasari, Tangerang. Indoor adem & estetik, outdoor rimbun banyak pohon. Buka tiap hari sampai tengah malam." },
     ],
   }),
   component: Home,

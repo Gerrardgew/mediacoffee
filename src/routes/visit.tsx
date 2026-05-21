@@ -23,27 +23,26 @@ function VisitPage() {
       <div className="grid lg:grid-cols-5 gap-8">
         <div className="lg:col-span-2 space-y-6">
           <InfoCard icon={<MapPin />} title="Alamat">
-            Jl. Palem Raja Raya, Bencongan Indah,<br />
-            Kec. Kelapa Dua, Kab. Tangerang, Banten 15810
+            Jl. Ir. Sutami No.18, RT.005/RW.011,<br />
+            Sukasari, Kec. Tangerang, Kota Tangerang, Banten 15118
           </InfoCard>
           <InfoCard icon={<Clock />} title="Jam Buka">
-            Buka tiap hari · tutup jam 12:00 malam
+            Buka tiap hari · tutup pukul 00.00
           </InfoCard>
           <InfoCard icon={<Phone />} title="Hubungi Kami">
             <a href="tel:082323239036" className="hover:text-primary transition-colors">0823-2323-9036</a>
           </InfoCard>
 
-          <div className="grid grid-cols-3 gap-3 pt-2">
-            <Pill icon={<Utensils size={14} />}>Dine-in</Pill>
-            <Pill icon={<Car size={14} />}>Kerbside</Pill>
-            <Pill icon={<ShoppingBag size={14} />}>Delivery</Pill>
+          <div className="grid grid-cols-2 gap-3 pt-2">
+            <Pill icon={<Utensils size={14} />}>Makan di tempat</Pill>
+            <Pill icon={<ShoppingBag size={14} />}>Bawa pulang</Pill>
           </div>
         </div>
 
         <div className="lg:col-span-3 rounded-3xl overflow-hidden border border-border bg-muted aspect-[4/3] lg:aspect-auto min-h-[400px]">
           <iframe
-            title="Lokasi Me.dia"
-            src="https://www.google.com/maps?q=Jl.+Palem+Raja+Raya+Bencongan+Indah+Tangerang&output=embed"
+            title="Lokasi Me.dia Coffee and Space"
+            src="https://www.google.com/maps?q=Me.dia+Coffee+and+Space+Jl.+Ir.+Sutami+Sukasari+Tangerang&output=embed"
             className="w-full h-full"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"

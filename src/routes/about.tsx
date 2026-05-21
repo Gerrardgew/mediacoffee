@@ -17,9 +17,9 @@ function AboutPage() {
     <>
       <section className="mx-auto max-w-4xl px-6 py-20 md:py-28 text-center">
         <div className="text-xs uppercase tracking-widest text-primary mb-3">Tentang Me.dia</div>
-        <h1 className="font-display text-5xl md:text-7xl leading-[1]">Roastery tetangga yang ramah sama siapa aja.</h1>
+        <h1 className="font-display text-5xl md:text-7xl leading-[1]">Coffee and space buat semua.</h1>
         <p className="mt-8 text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-          Kami bikin Me.dia biar ngopi enak terasa kayak di rumah — accessible, jujur, dan hangat. Roaster kami jalan small-batch. Pintunya buka sampai malam. Mejanya buat kamu, mau berapa lama pun nggak masalah.
+          Me.dia bukan cuma kedai kopi — kami juga space buat kamu nongkrong, kerja, atau seru-seruan bareng temen. Indoor adem & estetik buat yang mau fokus, outdoor rimbun banyak pohon buat yang mau santai. Buka pagi sampai tengah malam, harganya ramah di kantong.
         </p>
       </section>
 

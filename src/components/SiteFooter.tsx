@@ -21,8 +21,21 @@ export function SiteFooter() {
         </div>
         <div>
           <div className="text-xs uppercase tracking-widest text-primary mb-4">Cari Kami</div>
-          <ul className="space-y-3 text-sm text-secondary-foreground/80">
-            <li className="flex gap-2"><MapPin size={16} className="mt-0.5 shrink-0" /><span>Jl. Palem Raja Raya, Bencongan Indah, Tangerang</span></li>
+          <ul className="space-y-4 text-sm text-secondary-foreground/80">
+            <li className="flex gap-2">
+              <MapPin size={16} className="mt-0.5 shrink-0" />
+              <span>
+                <span className="block text-secondary-foreground font-medium">Bencongan Indah</span>
+                Jl. Palem Raja Raya, Kelapa Dua, Tangerang
+              </span>
+            </li>
+            <li className="flex gap-2">
+              <MapPin size={16} className="mt-0.5 shrink-0" />
+              <span>
+                <span className="block text-secondary-foreground font-medium">Sukasari</span>
+                Jl. Ir. Sutami No.18, Kota Tangerang
+              </span>
+            </li>
             <li className="flex gap-2"><Phone size={16} className="mt-0.5 shrink-0" /><span>0823-2323-9036</span></li>
             <li className="flex gap-2"><Instagram size={16} className="mt-0.5 shrink-0" /><span>@mediacoffee</span></li>
           </ul>

@@ -98,9 +98,9 @@ function Home() {
         </div>
         <div className="grid md:grid-cols-3 gap-6">
           {[
-            { name: "Caramel Latte", price: "Rp 32K", img: latteImg, note: "Smooth, manis pas, signature kami." },
-            { name: "Iced Cappuccino", price: "Rp 30K", img: heroImg, note: "Espresso nendang di atas cold foam." },
-            { name: "Affogato", price: "Rp 35K", img: beansImg, note: "Shot panas ketemu es krim vanilla." },
+            { name: "Kopi Mandra", price: "Rp 28K", img: latteImg, note: "Signature kami — bold, khas Me.dia." },
+            { name: "Coconut Delight", price: "Rp 32K", img: heroImg, note: "Kopi creamy dengan sentuhan kelapa." },
+            { name: "Hot Cappuccino", price: "Rp 30K", img: beansImg, note: "Cangkir gede, rasa kopi bold." },
           ].map((d) => (
             <article key={d.name} className="group bg-card border border-border rounded-3xl overflow-hidden hover:shadow-xl transition-all">
               <div className="aspect-[4/5] overflow-hidden">

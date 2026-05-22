@@ -1,9 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Star, Clock, MapPin, ArrowRight } from "lucide-react";
 import heroImg from "@/assets/hero-coffee.jpg";
-import beansImg from "@/assets/beans.jpg";
 import interiorImg from "@/assets/interior.jpg";
-import latteImg from "@/assets/latte.jpg";
+import coldplayImg from "@/assets/coldplay.jpg";
+import americanoImg from "@/assets/americano.jpg";
+import chocolateFrappeImg from "@/assets/chocolate-frappe.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -93,9 +94,9 @@ function Home() {
         </div>
         <div className="grid md:grid-cols-3 gap-6">
           {[
-            { name: "Caramel Latte", price: "Rp 32K", img: latteImg, note: "Smooth, manis pas, signature kami." },
-            { name: "Iced Cappuccino", price: "Rp 30K", img: heroImg, note: "Espresso nendang di atas cold foam." },
-            { name: "Affogato", price: "Rp 35K", img: beansImg, note: "Shot panas ketemu es krim vanilla." },
+            { name: "Cold Play", price: "Rp 35K", img: coldplayImg, note: "Espresso on the rock shake + mandarin orange." },
+            { name: "Americano", price: "Rp 25K", img: americanoImg, note: "Espresso shot + air panas. Clean & bold." },
+            { name: "Chocolate Frappe", price: "Rp 32K", img: chocolateFrappeImg, note: "Cokelat dingin blended, manis & creamy." },
           ].map((d) => (
             <article key={d.name} className="group bg-card border border-border rounded-3xl overflow-hidden hover:shadow-xl transition-all">
               <div className="aspect-[4/5] overflow-hidden">

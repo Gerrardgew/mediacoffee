@@ -1,7 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/medialogotp.png";
 
 const nav = [
   { to: "/", label: "Beranda" },
@@ -15,8 +14,9 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b border-border">
       <div className="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
-        <Link to="/" className="flex items-center" aria-label="Me.dia Coffee">
-          <img src={logo} alt="Me.dia Coffee" className="h-8 w-auto" />
+        <Link to="/" className="flex items-center gap-2 font-display text-xl tracking-tight">
+          <span className="inline-block w-2 h-2 rounded-full bg-primary" />
+          <span>Me<span className="text-primary">.</span>dia</span>
         </Link>
         <nav className="hidden md:flex items-center gap-8 text-sm">
           {nav.map((n) => (

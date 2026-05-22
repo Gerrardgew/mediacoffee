@@ -58,11 +58,6 @@ function Home() {
               height={1200}
               className="relative rounded-3xl shadow-2xl object-cover w-full aspect-[4/5] md:aspect-[5/6]"
             />
-            <div className="absolute -bottom-6 -left-6 hidden md:block bg-card border border-border rounded-2xl p-4 shadow-xl max-w-[220px]">
-              <div className="text-xs uppercase tracking-widest text-primary mb-1">Brew hari ini</div>
-              <div className="font-display text-lg">Caramel Latte</div>
-              <div className="text-xs text-muted-foreground mt-1">Manis, smooth, signature.</div>
-            </div>
           </div>
         </div>
       </section>

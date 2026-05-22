@@ -94,9 +94,9 @@ function Home() {
         </div>
         <div className="grid md:grid-cols-3 gap-6">
           {[
-            { name: "Cold Play", price: "Rp 35K", img: coldplayImg, note: "Espresso on the rock shake + mandarin orange." },
-            { name: "Americano", price: "Rp 25K", img: americanoImg, note: "Espresso shot + air panas. Clean & bold." },
-            { name: "Chocolate Frappe", price: "Rp 32K", img: chocolateFrappeImg, note: "Cokelat dingin blended, manis & creamy." },
+            { name: "Cold Play", price: "Rp 33K", img: coldplayImg, note: "Espresso on the rock shake + mandarin orange." },
+            { name: "Americano", price: "Rp 28K", img: americanoImg, note: "Espresso shot + air panas. Clean & bold." },
+            { name: "Chocolate Frappe", price: "Rp 35K", img: chocolateFrappeImg, note: "Cokelat dingin blended, manis & creamy." },
           ].map((d) => (
             <article key={d.name} className="group bg-card border border-border rounded-3xl overflow-hidden hover:shadow-xl transition-all">
               <div className="aspect-[4/5] overflow-hidden">

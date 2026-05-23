@@ -11,6 +11,5 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
-    target: "server", // ganti dari cloudflare ke generic server
   },
 });

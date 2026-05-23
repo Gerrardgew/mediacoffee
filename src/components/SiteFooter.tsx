@@ -7,7 +7,7 @@ export function SiteFooter() {
     <footer className="bg-secondary text-secondary-foreground mt-24">
       <div className="mx-auto max-w-7xl px-6 py-16 grid md:grid-cols-4 gap-10">
         <div className="md:col-span-2">
-          <div className="font-display text-3xl">Me<span className="text-primary">.</span>dia</div>
+          <img src={logo} alt="Me.dia" className="h-10 md:h-12 w-auto object-contain brightness-0 invert" />
           <p className="mt-3 text-secondary-foreground/70 max-w-sm leading-relaxed">
             Coffee & Roastery — pojok hangat di Bencongan Indah, tempat ngopi yang selalu punya cerita.
           </p>

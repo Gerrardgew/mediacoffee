@@ -38,7 +38,7 @@ export function SiteFooter() {
               </span>
             </li>
             <li className="flex gap-2"><Phone size={16} className="mt-0.5 shrink-0" /><span>0823-2323-9036</span></li>
-            <li className="flex gap-2"><Instagram size={16} className="mt-0.5 shrink-0" /><span>@mediacoffee</span></li>
+            <li className="flex gap-2"><Instagram size={16} className="mt-0.5 shrink-0" /><a href="https://instagram.com/me.dia.coffee" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">@me.dia.coffee</a></li>
           </ul>
         </div>
       </div>

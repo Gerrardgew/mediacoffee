@@ -1,8 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Star, Clock, MapPin, ArrowRight } from "lucide-react";
+import { Star, Clock, MapPin, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { useState, useEffect } from "react";
 import heroImg from "@/assets/hero-coffee.jpg";
 import interiorImg from "@/assets/interior.jpg";
 import coldplayImg from "@/assets/coldplay.jpg";
+import outdoorImg from "@/assets/mediacoffeeoutdoor.jpg";
 import americanoImg from "@/assets/americano.jpg";
 import chocolateFrappeImg from "@/assets/chocolate-frappe.jpg";
 
@@ -17,6 +19,12 @@ export const Route = createFileRoute("/")({
 });
 
 function Home() {
+  const [slideIdx, setSlideIdx] = useState(0);
+  const slides = [heroImg, outdoorImg];
+  useEffect(() => {
+    const interval = setInterval(() => setSlideIdx(i => (i + 1) % slides.length), 5000);
+    return () => clearInterval(interval);
+  }, []);
   return (
     <>
       {/* HERO */}
@@ -49,16 +57,43 @@ function Home() {
               <span className="flex items-center gap-2"><MapPin size={16} className="text-primary" /> Bencongan Indah</span>
             </div>
           </div>
-          <div className="relative">
+          <div className="relative aspect-[4/5] md:aspect-[5/6]">
             <div className="absolute -top-6 -left-6 w-32 h-32 rounded-full bg-primary/20 blur-3xl" />
             <div className="absolute bottom-0 right-0 w-48 h-48 rounded-full bg-secondary/20 blur-3xl" />
-            <img
-              src={heroImg}
-              alt="Espresso dituang ke cangkir keramik di Me.dia"
-              width={1600}
-              height={1200}
-              className="relative rounded-3xl shadow-2xl object-cover w-full aspect-[4/5] md:aspect-[5/6]"
-            />
+            {slides.map((src, i) => (
+              <img
+                key={i}
+                src={src}
+                alt={i === 0 ? "Espresso dituang ke cangkir keramik di Me.dia" : "Outdoor view of Me.dia coffee shop"}
+                width={1600}
+                height={1200}
+                className={`absolute inset-0 w-full h-full object-cover rounded-3xl shadow-2xl transition-opacity duration-500 ease-in-out ${slideIdx === i ? "opacity-100" : "opacity-0"}`}
+              />
+            ))}
+            <button
+              onClick={() => setSlideIdx((slideIdx - 1 + slides.length) % slides.length)}
+              className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/70 rounded-full p-2 hover:bg-white"
+              aria-label="Previous slide"
+            >
+              <ChevronLeft size={24} className="text-primary" />
+            </button>
+            <button
+              onClick={() => setSlideIdx((slideIdx + 1) % slides.length)}
+              className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/70 rounded-full p-2 hover:bg-white"
+              aria-label="Next slide"
+            >
+              <ChevronRight size={24} className="text-primary" />
+            </button>
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
+              {slides.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setSlideIdx(i)}
+                  className={`w-2 h-2 rounded-full ${slideIdx === i ? "bg-primary" : "bg-gray-300"}`}
+                  aria-label={`Slide ${i + 1}`}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </section>

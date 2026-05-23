@@ -1,13 +1,13 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, Phone, MapPin } from "lucide-react";
-import logo from "@/assets/media-logo.png";
+import logo from "@/assets/mediacoffeewbtp.png";
 
 export function SiteFooter() {
   return (
     <footer className="bg-secondary text-secondary-foreground mt-24">
       <div className="mx-auto max-w-7xl px-6 py-16 grid md:grid-cols-4 gap-10">
         <div className="md:col-span-2">
-          <img src={logo} alt="Me.dia" className="h-10 md:h-12 w-auto object-contain brightness-0 invert" />
+          <img src={logo} alt="Me.dia" className="h-20 md:h-22 w-auto object-contain brightness-0 invert" />
           <p className="mt-3 text-secondary-foreground/70 max-w-sm leading-relaxed">
             Coffee & Roastery — pojok hangat di Bencongan Indah, tempat ngopi yang selalu punya cerita.
           </p>

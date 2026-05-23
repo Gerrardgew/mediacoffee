@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/media-logo.png";
+import logo from "@/assets/mediacoffeelogotp.png";
 
 const nav = [
   { to: "/", label: "Beranda" },
@@ -16,7 +16,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b border-border">
       <div className="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
         <Link to="/" className="flex items-center" aria-label="Me.dia home">
-          <img src={logo} alt="Me.dia" className="h-7 md:h-8 w-auto object-contain" />
+          <img src={logo} alt="Me.dia" className="h-20 md:h-22 w-auto object-contain" />
         </Link>
         <nav className="hidden md:flex items-center gap-8 text-sm">
           {nav.map((n) => (

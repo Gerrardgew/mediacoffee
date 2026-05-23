@@ -105,12 +105,12 @@ function VisitPage() {
             <Instagram size={18} />
           </span>
           <div>
-            <div className="font-display text-xl">@mediacoffee</div>
+            <div className="font-display text-xl">@me.dia.coffee</div>
             <div className="text-sm text-muted-foreground">Update menu & event paling kekinian ada di IG.</div>
           </div>
         </div>
         <a
-          href="https://instagram.com/mediacoffee"
+          href="https://instagram.com/me.dia.coffee/"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center rounded-full bg-primary text-primary-foreground px-5 py-2.5 text-sm font-medium hover:bg-primary/90 transition-colors"

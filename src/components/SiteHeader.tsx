@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/mediacoffeelogotp.png";
+import logo from "@/assets/medialogotp.png";
 
 const nav = [
   { to: "/", label: "Beranda" },

@@ -1,14 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useDocumentMeta } from "@/hooks/use-document-meta";
 
 export const Route = createFileRoute("/menu")({
-  head: () => ({
-    meta: [
-      { title: "Menu — Me.dia Coffee & Roastery" },
-      { name: "description", content: "Cek menu lengkap Me.dia — signature latte, espresso, iced drinks, pastry, dan lainnya. Rp 25–50K per orang." },
-    ],
-  }),
   component: MenuPage,
 });
+
 
 type Item = {
   name: string;

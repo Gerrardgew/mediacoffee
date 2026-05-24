@@ -1,18 +1,17 @@
 import { createFileRoute } from "@tanstack/react-router";
 import beansImg from "@/assets/beans.jpg";
 import interiorImg from "@/assets/interior.jpg";
+import { useDocumentMeta } from "@/hooks/use-document-meta";
 
 export const Route = createFileRoute("/about")({
-  head: () => ({
-    meta: [
-      { title: "Tentang — Me.dia Coffee & Roastery" },
-      { name: "description", content: "Me.dia roasting biji kopi small-batch dan nyajiin di tempat yang hangat & ramah di Bencongan Indah, Tangerang." },
-    ],
-  }),
   component: AboutPage,
 });
 
 function AboutPage() {
+  useDocumentMeta({
+    title: "Tentang — Me.dia Coffee & Roastery",
+    description: "Me.dia roasting biji kopi small-batch dan nyajiin di tempat yang hangat & ramah di Bencongan Indah, Tangerang.",
+  });
   return (
     <>
       <section className="mx-auto max-w-4xl px-6 py-20 md:py-28 text-center">

@@ -8,18 +8,19 @@ import outdoorImg from "@/assets/mediacoffeeoutdoor.jpg";
 import americanoImg from "@/assets/americano.jpg";
 import chocolateFrappeImg from "@/assets/chocolate-frappe.jpg";
 
+import { useDocumentMeta } from "@/hooks/use-document-meta";
+
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Me.dia Coffee & Roastery — Ngopi santai di Tangerang" },
-      { name: "description", content: "Tempat nongkrong cozy buat kamu yang suka kopi. Hand-crafted drinks, vibes hangat, buka sampai tengah malam di Bencongan Indah, Tangerang." },
-    ],
-  }),
   component: Home,
 });
 
 function Home() {
+  useDocumentMeta({
+    title: "Me.dia Coffee & Roastery — Ngopi santai di Tangerang",
+    description: "Tempat nongkrong cozy buat kamu yang suka kopi. Hand-crafted drinks, vibes hangat, buka sampai tengah malam di Bencongan Indah, Tangerang.",
+  });
   const [slideIdx, setSlideIdx] = useState(0);
+
   const slides = [heroImg, outdoorImg];
   useEffect(() => {
     const interval = setInterval(() => setSlideIdx(i => (i + 1) % slides.length), 5000);

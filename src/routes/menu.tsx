@@ -146,6 +146,10 @@ const sections: Section[] = [
 ];
 
 function MenuPage() {
+  useDocumentMeta({
+    title: "Menu — Me.dia Coffee & Roastery",
+    description: "Cek menu lengkap Me.dia — signature latte, espresso, iced drinks, pastry, dan lainnya. Rp 25–50K per orang.",
+  });
   return (
     <div className="mx-auto max-w-5xl px-6 py-16 md:py-24">
       <div className="text-center max-w-xl mx-auto mb-16">

@@ -49,6 +49,10 @@ const branches: Branch[] = [
 ];
 
 function VisitPage() {
+  useDocumentMeta({
+    title: "Mampir ke Me.dia — Tangerang",
+    description: "Dua kedai Me.dia di Tangerang: Bencongan Indah (Coffee & Roastery) dan Sukasari (Coffee and Space). Buka tiap hari sampai tengah malam.",
+  });
   return (
     <div className="mx-auto max-w-7xl px-6 py-16 md:py-24">
       <div className="max-w-2xl mb-14">

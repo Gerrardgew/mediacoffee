@@ -7,6 +7,7 @@ import {
 } from "@tanstack/react-router";
 
 import { SiteHeader } from "@/components/SiteHeader";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { SiteFooter } from "@/components/SiteFooter";
 
 function NotFoundComponent() {
@@ -56,6 +57,7 @@ function RootComponent() {
           <Outlet />
         </main>
         <SiteFooter />
+        <WhatsAppButton />
       </div>
     </QueryClientProvider>
   );

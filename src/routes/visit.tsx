@@ -1,15 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { MapPin, Phone, Clock, Car, ShoppingBag, Utensils, Instagram } from "lucide-react";
+import { useDocumentMeta } from "@/hooks/use-document-meta";
 
 export const Route = createFileRoute("/visit")({
-  head: () => ({
-    meta: [
-      { title: "Mampir ke Me.dia — Tangerang" },
-      { name: "description", content: "Dua kedai Me.dia di Tangerang: Bencongan Indah (Coffee & Roastery) dan Sukasari (Coffee and Space). Buka tiap hari sampai tengah malam." },
-    ],
-  }),
   component: VisitPage,
 });
+
 
 type Branch = {
   name: string;
